@@ -18,6 +18,13 @@ app.use(express.static('./public'));
 
 app.get('/', homePage);
 
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+function handleError(error, response){
+  console.log(error);
+  response.render('/error', {error: 'The request could not be processed'});
+}
+
 function homePage(req,res){
-  res.render('pages/index');
+  res.render('./index');
 }
