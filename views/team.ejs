@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+  <body>
+    <main>
+      <h2><%=rosterTemp.name %></h2>
+      <ul>
+        <%rosterTemp.players.forEach((player) => {%>
+          <li><%=player.name%></li>
+        <% }); %>
+        
+      </ul>
+      
+      <p> this is page 2</p>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="../scripts/app.js"></script> -->
+</html>

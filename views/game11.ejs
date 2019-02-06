@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+  <body>
+    <main>
+      <h1>Hello World!</h1>
+      <p id =row-count>  There are <%= results.length %> games today.</p>
+      <div class="all-books">
+          <% results.forEach((game,index) => { %>
+          <div class="game-card">
+           
+            <h3> Home Team :<%= game.homeTeamName %></h3>
+            <h3> Visiting Team :<%= game.awayTeamName %></h3>
+            <p><%= game.gameId %></p>    
+            <button class="details-button" class="form-display">
+
+              <a href="/game/<%= index %>" >View Details</a></button>
+          </div>
+          <% }); %>
+      <p> this is page 2</p>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="../scripts/app.js"></script> -->
+</html>
