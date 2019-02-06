@@ -163,7 +163,7 @@
                     "game_number": 1,
                     "day_night": "N",
                     "scheduled": "2019-05-16T02:10:00+00:00",
-                    "home_team": "ef64da7f-cfaf-4300-87b0-9313386b977c",
+                    "home_team":    "ef64da7f-cfaf-4300-87b0-9313386b977c",
                     "away_team": "d52d5339-cbdd-43f3-9dfa-a42fd588b9a3",
                     "double_header": false,
                     "venue": {
